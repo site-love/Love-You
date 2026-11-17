@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Для Діани ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="hearts-background" id="heartsBackground"></div>
+
+    <main class="site">
+
+        <!-- ЕКРАН 1 -->
+        <section class="screen active" id="screen1">
+            <div class="content">
+                <div class="small-heart">❤️</div>
+                <p class="subtitle">Маленький сюрприз для тебе</p>
+                <h1>Для тебе,<br><span>Киця</span></h1>
+                <p class="description">
+                    Іноді хочеться зробити щось особливе
+                    для особливої людини...
+                </p>
+                <button class="main-button" onclick="nextScreen(2)">
+                    Відкрити ❤️
+                </button>
+            </div>
+        </section>
+
+        <!-- ЕКРАН 2 -->
+        <section class="screen" id="screen2">
+            <div class="content">
+                <p class="subtitle">Кілька слів для тебе</p>
+                <h2>Знаєш, киць...</h2>
+                <p class="description">
+                    Є люди, які з'являються в житті зовсім
+                    несподівано, але з часом стають
+                    по-справжньому особливими.
+                </p>
+                <p class="description">
+                    І я дуже радий, що одного дня
+                    познайомився саме з тобою.
+                </p>
+                <button class="main-button" onclick="nextScreen(3)">
+                    Далі ❤️
+                </button>
+            </div>
+        </section>
+
+        <!-- ЕКРАН 3 -->
+        <section class="screen" id="screen3">
+            <div class="content">
+                <div class="lilac">💜</div>
+                <p class="subtitle">Маленька деталь про тебе</p>
+                <h2>Ти особлива</h2>
+                <p class="description">
+                    Мені подобається твоя усмішка, твій голос,
+                    твій характер і навіть маленькі дрібниці,
+                    які роблять тебе саме тобою.
+                </p>
+                <p class="description">
+                    Сподіваюся, попереду на нас чекає
+                    ще багато теплих моментів.
+                </p>
+                <button class="main-button" onclick="nextScreen(4)">
+                    Ще дещо...
+                </button>
+            </div>
+        </section>
+
+        <!-- ЕКРАН 4 -->
+        <section class="screen" id="screen4">
+            <div class="content">
+                <p class="subtitle">І наостанок...</p>
+                <h2>Це для тебе ❤️</h2>
+                <p class="description">
+                    Я не знаю, що чекає на нас попереду,
+                    але я дуже радий, що наші шляхи перетнулися.
+                </p>
+                <p class="description">
+                    Дякую, що з'явилася в моєму житті.
+                </p>
+                <button class="main-button" onclick="showFinal()">
+                    На тебе чекає сюрприз 💗
+                </button>
+            </div>
+        </section>
+
+        <!-- ФІНАЛ -->
+        <section class="screen" id="screen5">
+            <div class="content final-content">
+                <h2>Для тебе, Сонце ❤️</h2>
+                <canvas id="heartCanvas"></canvas>
+                <p class="final-text" id="heartCount">
+    Готую для тебе дещо особливе... ❤️
+</p>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
